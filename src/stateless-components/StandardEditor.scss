@@ -1,0 +1,12 @@
+// A hack that allows the React component to specify a minRows attribute.
+.StandardEditorBox {
+  > div {
+    min-height: inherit;
+    > div {
+      min-height: inherit;
+      .ProseMirror[role="textbox"] {
+        min-height: inherit;
+      }
+    }
+  }
+}
